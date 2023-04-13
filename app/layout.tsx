@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={` bg-slate-800 text-violet-200  overflow-auto min-h-screen m-0`}>{children}</body>
     </html>
   )
 }
