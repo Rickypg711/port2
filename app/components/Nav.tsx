@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -22,6 +22,11 @@ const playFairDisplay = Playfair_Display({
 
 export default function Nav() {
   const [nav, setNav] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <div>
@@ -42,7 +47,7 @@ export default function Nav() {
               <div>
                 <div
                   className={`top-0 left-0 w-full h-full z-50 flex items-center justify-center md:block bg-slate-800 bg-opacity-75 transition-all ${
-                    nav && window.innerWidth <= 768 ? "fixed" : "hidden"
+                    nav && isClient && window.innerWidth <= 768 ? "fixed" : "hidden"
                   }`}
                  
                  
@@ -73,7 +78,7 @@ export default function Nav() {
               <div className=" flex-grow h-px bg-violet-200 mx-auto"></div>
               <div className="nav-left-item">
                 <div className=" ml-7 mr-3 text-teal-200 text-xl">
-                  {window.innerWidth > 768 && (
+                  {isClient && window.innerWidth > 768 && (
                     <p className="text-teal-200 text-xl">2023</p>
                   )}
                   <div className="md:hidden">
