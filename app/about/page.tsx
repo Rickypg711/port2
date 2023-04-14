@@ -28,26 +28,8 @@ import {
 export default function Home() {
   return (
     <div>
-     <Nav/>
-      {/* <div>
-        <div className="flex mt-3 items-center">
-          <div className="ml-3 mr-7">
-            <Link
-              href="/"
-              className={`${playFairDisplay.className}  text-teal-200 text-xl hover:line-through decoration-violet-200 transition-all`}
-            >
-              RICARDO PAREDES
-            </Link>
-          </div>
-          <div className="nav-line is-pink"></div>
-          <div className=" flex-grow h-px bg-violet-200 mx-auto"></div>
-          <div className="nav-left-item nav-copyright">
-            <div className=" ml-7 mr-3 text-teal-200 text-xl">©/2023</div>
-          </div>
-        </div>
-      </div> */}
+      <Nav />
 
-      {/*  */}
       <section className=" bg-slate-800 pt-4 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h1
@@ -56,36 +38,36 @@ export default function Home() {
             About Me
           </h1>
           <p className="text-violet-200  mb-8">
-            Hey, Im Ricardo. Most folks know me as{" "}
+            Hi there! My name is Ricardo, I'm a passionate front-end developer
+            with experience in a variety of tools and technologies. I've spent
+            the last few years honing my skills in{" "}
             <b
               className={`${playFairDisplay.className} font-bold text-teal-200`}
             >
-              aztec Warrior
+              React, Next.js, CSS, TypeScript, and HTML5,
             </b>{" "}
-            online.  
-            {/* <Image
-                alt="Ricardo Paredes"
-                src={me}
-                width="150"
-                height="150"
-                className="hidden md:block  rounded-full object-cover grayscale text-right"
-              /> */}
+            and I'm always eager to learn more.
           </p>
-         
+
           <div className=" text-violet-200  mb-8">
             <p>
-              Im currently the{" "}
+              My background in management has taught me valuable skills in
               <b
                 className={`${playFairDisplay.className} font-bold text-teal-200`}
               >
-                VP of Developer Experience at my House
+                {" "}
+                project planning, team collaboration, and effective
+                communication
               </b>
-              , where I lead the Development of new web tools . i focus on  <b
+              . I've also had the opportunity to work on back-end development
+              projects using{" "}
+              <b
                 className={`${playFairDisplay.className} font-bold text-teal-200`}
               >
-                educating and growing
-              </b>{" "}
-              my self and those around me.
+                {" "}
+                Python, Node.js, and REST APIs{" "}
+              </b>
+              .
             </p>
 
             <p>
@@ -106,24 +88,18 @@ export default function Home() {
               and no one has to ask for permission. You can just build.
             </p>
             <p>
-              Outside of Web development, I{" "}
-              <b
-                className={`${playFairDisplay.className} font-bold text-teal-200`}
-              >
-                angel invest
-              </b>{" "}
-              in developer tools companies and{" "}
-              <b
-                className={`${playFairDisplay.className} font-bold text-teal-200`}
-              >
-                advise early-stage startups
-              </b>
-              . I also do Developer Relations consulting work, helping companies
-              take their DevRel function from 0 to 1, or provide guidance on
-              growing communities, content creation, and developer marketing.
+              As a developer, I'm committed to creating beautiful, user-friendly
+              interfaces that deliver a seamless user experience. I'm always
+              exploring new tools and technologies to improve my skills and stay
+              ahead of the curve. Outside of development, I've gained valuable
+              experience in social media marketing, and I'm comfortable using
+              tools like GitHub to manage my projects and collaborate with other
+              developers. If you're looking for a dedicated developer with a
+              passion for creating innovative solutions, please don't hesitate
+              to get in touch. I'm excited to hear about your next project and
+              explore how I can contribute to your team.
             </p>
           </div>
-
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <Link
